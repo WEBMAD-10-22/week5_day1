@@ -1,0 +1,14 @@
+<h1>Crear usuario</h1>
+
+<form action="/auth/login" method="post">
+  <label for="">Email</label>
+  <input type="text" name="email">
+  <label for="">Password</label>
+  <input type="text" name="password">
+
+  <button type="submit">Create</button>
+</form>
+
+{{#if messageError}}
+  <h2>{{messageError}}</h2>
+{{/if}}
